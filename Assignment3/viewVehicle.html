@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Sell your Vehicle Now!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="enteredVehicles.html">List of Entered Vehicles</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-shrink-0">
+        <div class="text-center mt-4">
+            <h1>Vehicle Information</h1>
+        </div>
+        <form id="formViewPage" novalidate>
+            <div class="card mb-4">
+                <div class="card-header">
+                    Seller's Information
+                </div>
+                <div class="p-2">
+                    <div class="mb-2">
+                        <div class="form-item">
+                            <label for="firstNameView" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstNameView" disabled>
+                            <small>Please enter a first name</small>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-item">
+                            <label for="lastNameView" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastNameView" disabled>
+                            <small>Please enter a last name</small>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-item">
+                            <label for="addressView" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="addressView" disabled>
+                            <small>Please enter a address</small>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-5">
+                            <div class="form-item">
+                                <label for="cityView" class="form-label">City</label>
+                                <input type="text" class="form-control" id="cityView" disabled>
+                                <small>Please enter a city</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-item">
+                                <label for="provinceView" class="form-label">Province</label>
+                                <select id="provinceView" class="form-select" disabled>
+                                    <option value="AB">AB</option>
+                                    <option value="BC">BC</option>
+                                    <option value="MB">MB</option>
+                                    <option value="NB">NB</option>
+                                    <option value="NL">NL</option>
+                                    <option value="NS">NS</option>
+                                    <option value="NT">NT</option>
+                                    <option value="NU">NU</option>
+                                    <option value="ON">ON</option>
+                                    <option value="PE">PE</option>
+                                    <option value="QC">QC</option>
+                                    <option value="SK">SK</option>
+                                    <option value="YT">YT</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-item">
+                                <label for="postalCodeView" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="postalCodeView" disabled>
+                                <small>Please enter a valid postal code | e.g. A1A 1A1</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div class="form-item">
+                                <label for="phoneNumberView" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phoneNumberView" disabled>
+                                <small>Please enter a valid phone number | e.g. 123-123-1234 or (123)123-1234</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-item">
+                                <label for="emailView" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="emailView" disabled>
+                                <small>Please enter a valid email | e.g. example@domain.com</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header">
+                    Vehicle's Information
+                </div>
+                <div class="p-2">
+                    <div class="mb-2">
+                        <div class="form-item">
+                            <label for="makeView" class="form-label">Make</label>
+                            <input type="text" class="form-control" id="makeView" disabled>
+                            <small>Please enter a make</small>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-item">
+                            <label for="modelView" class="form-label">Model</label>
+                            <input type="text" class="form-control" id="modelView" disabled>
+                            <small>Please enter a model</small>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-item">
+                            <label for="yearView" class="form-label">Year</label>
+                            <input type="text" class="form-control" id="yearView" disabled>
+                            <small>Please enter a valid year</small>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-item">
+                            <label for="jdpowerPageInput" class="form-label">JD Power and Associates page</label>
+                            <input type="text" class="form-control" id="jdpowerPageInput" disabled>
+                            <a id="jdpowerPage"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light mt-auto">
+        <div class="container text-center">
+            <span class="text-muted">&copy; 2022 Jisung Kim | PROG2070 Assignment 3</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="scripts/view.js"></script>
+</body>
+
+</html>

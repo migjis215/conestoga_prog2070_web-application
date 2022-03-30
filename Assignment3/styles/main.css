@@ -1,0 +1,37 @@
+main {
+    margin: auto;
+    width: 80%;
+}
+
+.btn-add {
+    margin-top: 150px;
+    padding: 50px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form-item small {
+    visibility: hidden;
+}
+
+.form-item.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-item.success input,
+.form-item.success select {
+    border-color: #2ecc71;
+}
+
+.form-item.error input,
+.form-item.error select {
+    border-color: #e74c3c;
+}
+
+#jdpowerPage {
+    position: absolute;
+    bottom: 23px;
+    left: 20px;
+}
